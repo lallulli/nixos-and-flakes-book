@@ -8,7 +8,7 @@ Nix is a declarative package manager that enables users to declare the desired s
 
 NixOS, a Linux distribution built on top of the Nix package manager, can be described as "OS as Code." It employs declarative Nix configuration files to describe the entire state of the operating system.
 
-An operating system consists of various software packages, configuration files, and text/binary data, all of which represent the current state of the system. Declarative configuration can manage only the static portion of this state. Dynamic data, such as PostgreSQL, MySQL, or MongoDB data, cannot be effectively managed through declarative configuration(It is not feasible to delete all new PostgreSQL data that is not declared in the configuration during each deployment).
+An operating system consists of various software packages, configuration files, and text/binary data, all of which represent the current state of the system. Declarative configuration can manage only the static portion of this state. Dynamic data, such as PostgreSQL, MySQL, or MongoDB data, cannot be effectively managed through declarative configuration (it is not feasible to delete all new PostgreSQL data that is not declared in the configuration during each deployment).
 Therefore, **NixOS primarily focuses on managing a portion of the system state in a declarative manner**.
 Dynamic data mentioned above, along with the contents in the user's home directory, remain unaffected by NixOS when rolling back to a previous generation.
 
